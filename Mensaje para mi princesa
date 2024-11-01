@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensaje para el amor de mi vida</title>
+    <style>
+        /* Importar la fuente Aptos Narrow desde Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Aptos:wght@400&display=swap');
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Aptos', sans-serif;
+            background-color: #f7e6e6; /* Color de fondo */
+            position: relative; /* Para posicionar los corazones */
+            overflow: hidden; /* Evitar el desbordamiento */
+            text-align: center;
+        }
+
+        .heart {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            transform: rotate(45deg);
+            animation: heartbeat 1.5s infinite;
+        }
+        
+        .heart::before, .heart::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            border-radius: 50%;
+        }
+
+        .heart::before {
+            top: -10px;
+            left: 0;
+        }
+
+        .heart::after {
+            left: 10px;
+            top: 0;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        img {
+            max-width: 60%; /* Cambia este valor para ajustar el tamaño de la imagen */
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            font-size: 24px; /* Tamaño de letra ajustado a 24px */
+            margin-top: 20px;
+            color: #000000; /* Color negro */
+        }
+    </style>
+</head>
+<body>
+    <div class="heart" style="top: 20%; left: 10%; animation-delay: 0s;"></div>
+    <div class="heart" style="top: 30%; left: 50%; animation-delay: 0.5s;"></div>
+    <div class="heart" style="top: 60%; left: 80%; animation-delay: 1s;"></div>
+    <div class="heart" style="top: 70%; left: 20%; animation-delay: 1.5s;"></div>
+    <img src="mifoto.jpg" alt="Foto especial">
+    <h1>Gracias amor de mi vida por salvarme la vida, por hacerme creer en las cosas bonitas. Te amo, amor de mi vida</h1>
+</body>
+</html>
